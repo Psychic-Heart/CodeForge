@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Dancing+Script:wght@500&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Oswald:wght@400;500&family=Roboto+Slab:wght@500&family=Satisfy&display=swap' rel='stylesheet');
+body {
+  margin: 25px;
+  padding: 20px;
+  background: black;
+}
+h1 {
+text-align: center;
+  color:#fff;
+  font-size:60px;
+  font-family: 'Libre Baskerville', serif;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color:red;
+}  
+h3 {
+color: cyan;
+  font-size:30px;
+  background-color:blue;
+  width:200px;
+  margin:5px;
+  padding:10px 0;
+  border: solid gold;
+}
+
+.Details {
+color:#fff;
+  font-size:18px;
+}
+h4 {
+ color:#6495ED;
+  font-size:27px;
+  font-family: 'Satisfy';
+  text-decoration: underline;
+  text-decoration-style:wavy;
+  text-decoration-color:cyan;
+}
+.contact {
+  background-color: azure;
+  font-size:20px;
+  color:black;
+  width:500px;
+  margin:5px;
+  padding:10px 0;
+  border: 15px solid ;
+  border-color:#00Bfff;
+}
