@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+ 
+  <title>Silly Story Generator</title>
+</head>
+<body>
+  <div class="a">
+    <label for="customname">Enter The Name:</label>
+    <input id="customname" type="text" placeholder="">
+      </div>
+    <div class="b">
+      <label for="us">United States</label><input id="us" type="radio" name="ukus" value="us"></input>
+      <label for="us">United Kingdom</label><input id="uk" type="radio" name="ukus" value="uk"></input>
+    </div>
+    <div>
+      <button class="randomize">Generate Random Story</button>
+    </div>
+    <p class="story"></p>
+   <script>
+  var customName = document.getElementById('customname');
+var randomize = document.querySelector('.randomize');
+var story = document.querySelector('.story');
+function randomValueFromArray(array) {
+    var random = [Math.floor(Math.random()*array.length)];
+    return array[random];
+}
+var sTory = 'It was 94 farenheit outside, so insertx went for a walk. When they got to inserty, they stared in horror for a few moments, then insertz Bob saw the whole thing, but was not surprised - insertx weighs 300 pounds, and it was a hot day.';
+var insertX = ['Willy the Goblin','Big Daddy', 'Father Christmas'];
+var insertY = ['the soup kitchen','Disneyland', 'the White House'];
+var insertZ = ['spontaneously combusted.','melted into a puddle on the sidewalk.', 'turned into a slug and crawled away.'];
+randomize.addEventListener('click', result);
+
+function result() {
+  var sillyStory = sTory;
+  var xInsert =randomValueFromArray (insertX);
+  var yInsert =randomValueFromArray (insertY);
+var zInsert =randomValueFromArray (insertZ);
+  var sillyStory = sillyStory.replaceAll('insertx',xInsert);
+  var sillyStory = sillyStory.replace('inserty',yInsert);
+  var sillyStory = sillyStory.replace('insertz',zInsert);
+
+if (customName.value!=='') {
+        var name = customName.value;
+        sillyStory = sillyStory.replace('Bob',name);
+    }
+    if (document.getElementById("uk").checked) {
+        var weight = Math.round(300*0.07142) + 'stone';
+        var temperature = Math.round((94-32)*(5/9)) + '℃';
+      var sillyStory= sillyStory.replace('94 farenheit',temperature);
+      var sillyStory= sillyStory.replace('300 pounds',weight);
+    }
+    story.textContent = sillyStory;
+    story.style.visibility = 'visible';
+}
+  </script>
+</body>
+</html>
