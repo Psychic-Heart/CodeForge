@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Playfair+Display&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Slab:wght@500&family=Nanum+Myeongjo&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    line-height: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    text-indent: 50px;
+    line-height: 30px;
+}
+
+h1 {
+    margin-top: 0 auto;
+    font-size:60px;
+    padding: 30px;
+    text-align: center;
+    font-family: serif;
+
+}
+.one {
+    float: left;
+    width: 50% ;
+    font-size: 18px;
+}
+h2 {
+    margin-top: 0;
+    font-size:35px;
+    font-family: 'Work Sans', sans-serif;;
+}
+aside {
+    float: left;
+    width: 30% ;
+}
+nav {
+    float: left;
+    width: 15% ;
+}
+aside {
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+aside ul {
+    list-style-type:square ;
+}
+footer {
+    clear: both;
+}
+.one, h1, aside, nav {
+    padding: 20px;
+}
+footer {
+    padding: 20px;
+    font-size: 20px;
+}
+h1, footer {
+    border-top: 5px solid #960018;
+    border-bottom: 5px solid #960018;
+}
+.one ol {
+    list-style-type: lower-alpha;
+}
+.one ol li a:hover{
+    color: blue;
+}
+.one a:hover{
+    color: blue;
+}
+
+.one ul {
+    list-style-type: square;
+}
+.one ul a:hover {
+    color: blue;
+}
+aside a:hover{
+    color: blue;
+}
+nav ul {
+    list-style-type: none;
+    margin-top: 2.5px;
+    padding: 0;  
+}
+nav ul li {
+    text-align: center;
+}
+nav ul li a {
+    background: azure;
+    display: block;
+    border:2px solid #960018;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 0;
+    box-shadow:-5px 5px 7px black;
+    padding: 10px 0;
+    color: beige;
+    text-align: center;
+    block-size: 75px;
+}
+a:link, a:visited, a:focus, a:hover {
+    color:#960018;
+}
+  
+a:focus, a:hover {
+    text-decoration: none;
+}
+  
+a:active {
+    color: rgb(48, 45, 227);
+}
+nav ul li a:focus, nav ul li a:hover
+{
+    background:#7f2d3b ;
+    color: white;
+}
